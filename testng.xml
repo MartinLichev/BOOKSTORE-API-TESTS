@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Bookstore API Regression" verbose="1" parallel="false">
+  <test name="API">
+    <classes>
+      <class name="com.example.bookstore.api.tests.BooksApiTests"/>
+      <class name="com.example.bookstore.api.tests.AuthorsApiTests"/>
+      <class name="com.example.bookstore.api.tests.ActivitiesApiTests"/>
+      <class name="com.example.bookstore.api.tests.CoverPhotosApiTests"/>
+      <class name="com.example.bookstore.api.tests.UsersApiTests"/>
+    </classes>
+  </test>
+</suite>
