@@ -125,6 +125,7 @@ mvn -q -ntp -B -P regression clean test
 - **Allure**:
   - Serve locally: `mvn allure:serve`
   - Generate static site: `mvn allure:report`
+  - Run tests + immediately open a static report: `mvn clean test allure:report && open target/site/allure-maven/index.html`
   - Raw results: `target/allure-results`
 
 ---
