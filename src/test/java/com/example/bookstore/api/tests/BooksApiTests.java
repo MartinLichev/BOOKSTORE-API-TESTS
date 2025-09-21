@@ -1,5 +1,6 @@
 package com.example.bookstore.api.tests;
 
+import com.example.bookstore.api.BaseApiTest;
 import com.example.bookstore.api.client.BooksClient;
 import com.example.bookstore.api.models.Book;
 import com.example.bookstore.api.util.IdGenerator;
@@ -64,8 +65,7 @@ public class BooksApiTests extends BaseApiTest {
                 faker.lorem().sentence(8),
                 faker.number().numberBetween(50, 1000),
                 faker.lorem().sentence(6),
-                Instant.now().toString()
-        );
+                Instant.now().toString());
 
         Response res = books.create(payload);
         res.then().statusCode(200);
@@ -85,8 +85,7 @@ public class BooksApiTests extends BaseApiTest {
                 "Updated " + faker.lorem().sentence(8),
                 faker.number().numberBetween(100, 600),
                 "Updated excerpt",
-                Instant.now().toString()
-        );
+                Instant.now().toString());
 
         Response res = books.update(targetId, payload);
         res.then().statusCode(200);

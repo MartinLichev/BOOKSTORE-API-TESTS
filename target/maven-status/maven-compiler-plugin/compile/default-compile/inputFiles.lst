@@ -1,0 +1,14 @@
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/client/ActivitiesClient.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/client/AuthorsClient.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/client/BooksClient.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/client/CoverPhotosClient.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/client/UsersClient.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/config/Config.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/http/RequestSpecFactory.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/models/Activity.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/models/Author.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/models/Book.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/models/CoverPhoto.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/models/User.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/util/IdGenerator.java
+/Users/martinlichev/Downloads/bookstore-api-tests/src/main/java/com/example/bookstore/api/util/JsonUtils.java

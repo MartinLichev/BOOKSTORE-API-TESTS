@@ -1,0 +1,6 @@
+com/example/bookstore/api/BaseApiTest.class
+com/example/bookstore/api/tests/CoverPhotosApiTests.class
+com/example/bookstore/api/tests/ActivitiesApiTests.class
+com/example/bookstore/api/tests/UsersApiTests.class
+com/example/bookstore/api/tests/AuthorsApiTests.class
+com/example/bookstore/api/tests/BooksApiTests.class
