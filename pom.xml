@@ -23,6 +23,7 @@
     <surefire.version>3.3.1</surefire.version>
     <datafaker.version>2.2.2</datafaker.version>
     <slf4j.version>2.0.13</slf4j.version>
+      <testng.suite>testng.xml</testng.suite>
   </properties>
 
   <dependencies>
@@ -108,7 +109,7 @@
         <version>${surefire.version}</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>testng.xml</suiteXmlFile>
+            <suiteXmlFile>${testng.suite}</suiteXmlFile>
           </suiteXmlFiles>
           <reportsDirectory>${project.build.directory}/surefire-reports</reportsDirectory>
           <systemPropertyVariables>
@@ -124,4 +125,21 @@
       </plugin>
     </plugins>
   </build>
+
+  <profiles>
+    <profile>
+      <id>full</id>
+      <activation><activeByDefault>true</activeByDefault></activation>
+      <properties><testng.suite>testng-full.xml</testng.suite></properties>
+    </profile>
+    <profile>
+      <id>smoke</id>
+      <properties><testng.suite>testng-smoke.xml</testng.suite></properties>
+    </profile>
+    <profile>
+      <id>regression</id>
+      <properties><testng.suite>testng-regression.xml</testng.suite></properties>
+    </profile>
+  </profiles>
 </project>
+
