@@ -1,5 +1,6 @@
 package com.example.bookstore.api.tests;
 
+import com.example.bookstore.api.BaseApiTest;
 import com.example.bookstore.api.client.AuthorsClient;
 import com.example.bookstore.api.models.Author;
 import com.example.bookstore.api.util.IdGenerator;

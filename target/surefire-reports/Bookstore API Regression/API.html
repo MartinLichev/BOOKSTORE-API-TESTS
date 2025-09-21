@@ -1,0 +1,235 @@
+<html>
+<head>
+<title>TestNG:  API</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>API</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Sep 21 14:44:09 EEST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>6 seconds (6677 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.example.bookstore.api.tests.CoverPhotosApiTests.updateCoverPhoto_returns200()'><b>updateCoverPhoto_returns200</b><br>Test class: com.example.bookstore.api.tests.CoverPhotosApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.CoverPhotosApiTests@12aba8be</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.AuthorsApiTests.getAuthorById_existing_returns200()'><b>getAuthorById_existing_returns200</b><br>Test class: com.example.bookstore.api.tests.AuthorsApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.AuthorsApiTests@1e1a0406</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.UsersApiTests.deleteUser_returns200()'><b>deleteUser_returns200</b><br>Test class: com.example.bookstore.api.tests.UsersApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.UsersApiTests@290222c1</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.UsersApiTests.getUserById_existing_returns200()'><b>getUserById_existing_returns200</b><br>Test class: com.example.bookstore.api.tests.UsersApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.UsersApiTests@290222c1</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.BooksApiTests.getBookById_notFound_returns404()'><b>getBookById_notFound_returns404</b><br>Test class: com.example.bookstore.api.tests.BooksApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.BooksApiTests@550dbc7a</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.AuthorsApiTests.createAuthor_returns200AndEchoesPayload()'><b>createAuthor_returns200AndEchoesPayload</b><br>Test class: com.example.bookstore.api.tests.AuthorsApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.AuthorsApiTests@1e1a0406</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.CoverPhotosApiTests.getAllCoverPhotos_returns200AndNonEmptyList()'><b>getAllCoverPhotos_returns200AndNonEmptyList</b><br>Test class: com.example.bookstore.api.tests.CoverPhotosApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.CoverPhotosApiTests@12aba8be</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.CoverPhotosApiTests.getCoverPhotosByBookId_returns200()'><b>getCoverPhotosByBookId_returns200</b><br>Test class: com.example.bookstore.api.tests.CoverPhotosApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.CoverPhotosApiTests@12aba8be</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.CoverPhotosApiTests.createCoverPhoto_returns200AndEchoesPayload()'><b>createCoverPhoto_returns200AndEchoesPayload</b><br>Test class: com.example.bookstore.api.tests.CoverPhotosApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.CoverPhotosApiTests@12aba8be</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.AuthorsApiTests.deleteAuthor_returns200()'><b>deleteAuthor_returns200</b><br>Test class: com.example.bookstore.api.tests.AuthorsApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.AuthorsApiTests@1e1a0406</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.BooksApiTests.getBookById_existing_returns200()'><b>getBookById_existing_returns200</b><br>Test class: com.example.bookstore.api.tests.BooksApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.BooksApiTests@550dbc7a</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.BooksApiTests.getAllBooks_returns200AndNonEmptyList()'><b>getAllBooks_returns200AndNonEmptyList</b><br>Test class: com.example.bookstore.api.tests.BooksApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.BooksApiTests@550dbc7a</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.UsersApiTests.createUser_returns200AndEchoesPayload()'><b>createUser_returns200AndEchoesPayload</b><br>Test class: com.example.bookstore.api.tests.UsersApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.UsersApiTests@290222c1</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.UsersApiTests.getUserById_notFound_returns404()'><b>getUserById_notFound_returns404</b><br>Test class: com.example.bookstore.api.tests.UsersApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.UsersApiTests@290222c1</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.ActivitiesApiTests.getActivityById_notFound_returns404()'><b>getActivityById_notFound_returns404</b><br>Test class: com.example.bookstore.api.tests.ActivitiesApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.ActivitiesApiTests@3cebbb30</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.BooksApiTests.createBook_returns200AndEchoesPayload()'><b>createBook_returns200AndEchoesPayload</b><br>Test class: com.example.bookstore.api.tests.BooksApiTests</td>
+<td></td>
+<td>1</td>
+<td>com.example.bookstore.api.tests.BooksApiTests@550dbc7a</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.CoverPhotosApiTests.getCoverPhotoById_existing_returns200()'><b>getCoverPhotoById_existing_returns200</b><br>Test class: com.example.bookstore.api.tests.CoverPhotosApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.CoverPhotosApiTests@12aba8be</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.UsersApiTests.getAllUsers_returns200AndNonEmptyList()'><b>getAllUsers_returns200AndNonEmptyList</b><br>Test class: com.example.bookstore.api.tests.UsersApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.UsersApiTests@290222c1</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.BooksApiTests.deleteBook_returns200()'><b>deleteBook_returns200</b><br>Test class: com.example.bookstore.api.tests.BooksApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.BooksApiTests@550dbc7a</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.AuthorsApiTests.getAuthorById_notFound_returns404()'><b>getAuthorById_notFound_returns404</b><br>Test class: com.example.bookstore.api.tests.AuthorsApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.AuthorsApiTests@1e1a0406</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.ActivitiesApiTests.getActivityById_existing_returns200()'><b>getActivityById_existing_returns200</b><br>Test class: com.example.bookstore.api.tests.ActivitiesApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.ActivitiesApiTests@3cebbb30</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.BooksApiTests.updateBook_returns200AndBodyMatchesPayload()'><b>updateBook_returns200AndBodyMatchesPayload</b><br>Test class: com.example.bookstore.api.tests.BooksApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.BooksApiTests@550dbc7a</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.AuthorsApiTests.getAuthorsByBookId_returns200()'><b>getAuthorsByBookId_returns200</b><br>Test class: com.example.bookstore.api.tests.AuthorsApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.AuthorsApiTests@1e1a0406</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.AuthorsApiTests.getAllAuthors_returns200AndNonEmptyList()'><b>getAllAuthors_returns200AndNonEmptyList</b><br>Test class: com.example.bookstore.api.tests.AuthorsApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.AuthorsApiTests@1e1a0406</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.ActivitiesApiTests.createActivity_returns200AndEchoesPayload()'><b>createActivity_returns200AndEchoesPayload</b><br>Test class: com.example.bookstore.api.tests.ActivitiesApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.ActivitiesApiTests@3cebbb30</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.ActivitiesApiTests.updateActivity_returns200()'><b>updateActivity_returns200</b><br>Test class: com.example.bookstore.api.tests.ActivitiesApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.ActivitiesApiTests@3cebbb30</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.UsersApiTests.updateUser_returns200()'><b>updateUser_returns200</b><br>Test class: com.example.bookstore.api.tests.UsersApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.UsersApiTests@290222c1</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.ActivitiesApiTests.getAllActivities_returns200AndNonEmptyList()'><b>getAllActivities_returns200AndNonEmptyList</b><br>Test class: com.example.bookstore.api.tests.ActivitiesApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.ActivitiesApiTests@3cebbb30</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.CoverPhotosApiTests.deleteCoverPhoto_returns200()'><b>deleteCoverPhoto_returns200</b><br>Test class: com.example.bookstore.api.tests.CoverPhotosApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.CoverPhotosApiTests@12aba8be</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.AuthorsApiTests.updateAuthor_returns200()'><b>updateAuthor_returns200</b><br>Test class: com.example.bookstore.api.tests.AuthorsApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.AuthorsApiTests@1e1a0406</td></tr>
+<tr>
+<td title='com.example.bookstore.api.tests.ActivitiesApiTests.deleteActivity_returns200()'><b>deleteActivity_returns200</b><br>Test class: com.example.bookstore.api.tests.ActivitiesApiTests</td>
+<td></td>
+<td>0</td>
+<td>com.example.bookstore.api.tests.ActivitiesApiTests@3cebbb30</td></tr>
+</table><p>
+</body>
+</html>
